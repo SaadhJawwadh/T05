@@ -1,0 +1,50 @@
+<svg viewBox="0 0 200 200" aria-label="Season Navigation">
+                <defs>
+                    <!-- Quadrant Path Definition -->
+                    <path id="quadrant" d="M 100 100 L 100 5 A 95 95 0 0 1 195 100 Z"/>
+                </defs>
+
+                <!-- Background Circle -->
+                <circle cx="100" cy="100" r="95" fill="white" stroke="black" stroke-width="3"/>
+
+                <!-- Clickable Quadrants Using <use> -->
+                <a href="winter.html" tabindex="0">
+                    <use href="#quadrant" transform="rotate(0, 100, 100)" fill="lightblue" class="season-quadrant"/>
+                    <foreignObject x="75" y="10" width="50" height="50">
+                        <div class="season-label">
+                            <img src="images/winter.png" alt="Winter Icon" class="season-icon">
+                            <span>Winter</span>
+                        </div>
+                    </foreignObject>
+                </a>
+
+                <a href="spring.html" tabindex="0">
+                    <use href="#quadrant" transform="rotate(90, 100, 100)" fill="lightgreen" class="season-quadrant"/>
+                    <foreignObject x="140" y="75" width="50" height="50">
+                        <div class="season-label">
+                            <img src="images/spring.png" alt="Spring Icon" class="season-icon">
+                            <span>Spring</span>
+                        </div>
+                    </foreignObject>
+                </a>
+
+                <a href="summer.html" tabindex="0">
+                    <use href="#quadrant" transform="rotate(180, 100, 100)" fill="yellow" class="season-quadrant"/>
+                    <foreignObject x="75" y="140" width="50" height="50">
+                        <div class="season-label">
+                            <img src="images/summer.png" alt="Summer Icon" class="season-icon">
+                            <span>Summer</span>
+                        </div>
+                    </foreignObject>
+                </a>
+
+                <a href="autumn.html" tabindex="0">
+                    <use href="#quadrant" transform="rotate(270, 100, 100)" fill="orange" fill-opacity="0.5" class="season-quadrant"/>
+                    <foreignObject x="10" y="75" width="50" height="50">
+                        <div class="season-label">
+                            <img src="images/autumn.png" alt="Autumn Icon" class="season-icon">
+                            <span>Autumn</span>
+                        </div>
+                    </foreignObject>
+                </a>
+            </svg>
